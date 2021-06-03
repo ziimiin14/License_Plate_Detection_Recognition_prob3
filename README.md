@@ -20,21 +20,8 @@ P/S: The detection result is accurate whereas the recognition result is not sinc
 
 
 
-
-## Training on YOLOv5
-* Download the [CCPD](https://github.com/detectRecog/CCPD) data and put it into 'ccpd' folder
-* run 'MTCNN/data_set/preprocess.py' to split training data and validation data and put in "ccpd_train" and "ccpd_val" folders respectively.
-* run 'MTCNN/data_preprocessing/gen_Pnet_train_data.py', 'MTCNN/data_preprocessing/gen_Onet_train_data.py','MTCNN/data_preprocessing/assemble_Pnet_imglist.py', 'MTCNN/data_preprocessing/assemble_Onet_imglist.py' for training data preparation.
-* run 'MTCNN/train/Train_Pnet.py' and 'MTCNN/train/Train_Onet.py
-
-
-
-
-
-## Test
-* run 'MTCNN/MTCNN.py' for license plate detection
-* run 'LPRNet/LPRNet_Test.py' for license plate recognition
-* run 'main.py' for both
+# Test
+* run python3 main.py 
 
 ## Reference
 * [MTCNN](https://arxiv.org/abs/1604.02878v1)
