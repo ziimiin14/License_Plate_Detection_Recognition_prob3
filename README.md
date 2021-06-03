@@ -10,6 +10,9 @@
 3) YOLOv5s network which is a shrink network from YOLOv5 is being used for the purpose of lower inference time.
 4) Combined YOLOv5 network together with LPRNet and STL to detect and recognize license plate.
 
+## Tasks Not Completed:
+1) Build a simple client-server-based system for actual test. (No prior experience in web development)
+
 
 
 ## Results:
@@ -58,10 +61,11 @@ P/S: The detection result is accurate whereas the recognition result is not sinc
 
 
 # Test
+* Put the car photos in [test](https://github.com/ziimiin14/License_Plate_Detection_Recognition/tree/master/test) folder
 * run "python3 main.py --weights 
 
 ## Reference
-* [MTCNN](https://arxiv.org/abs/1604.02878v1)
+* [YOLOv5](https://github.com/ultralytics/yolov5)
 * [LPRNet](https://arxiv.org/abs/1806.10447)
 * [Spatial Transformer Layer](https://arxiv.org/abs/1506.02025)
 * [LPRNet_Pytorch](https://github.com/sirius-ai/LPRNet_Pytorch)
