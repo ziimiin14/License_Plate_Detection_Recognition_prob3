@@ -16,6 +16,8 @@
 ## Results:
 
 <img src="test/SGcar_1.jpg"  width="450" style="float: left;"> <img src="test_result/detected_SGcar_1.jpg"  width="450" style="float: left;">
+<img src="test/1.jpg"  width="450" style="float: left;"> <img src="test_result/detected_1.jpg"  width="450" style="float: left;">
+
 
 
 
