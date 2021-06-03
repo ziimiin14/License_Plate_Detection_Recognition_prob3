@@ -7,6 +7,9 @@ This is a two stage lightweight and robust license plate recognition in MTCNN an
 The modified MTCNN structure is presented as below. Only proposal net (Pnet) and output net (Onet) are used in this work since it is found that skipping Rnet will not hurt the accuracy in this case.  The Onet accepts 24(height) x 94(width) BGR image which is consistent with input for LPRNet. 
 
 <img src="test/MTCNN.png"  width="600" style="float: left;">
+<img src="test/SGcar_1.jpg"  width="600" style="float: left;">
+<img src="test_result/detected_SGcar_1.jpg"  width="600" style="float: right;">
+
 
 ## LPRNet Performance 
 LPRNet coding is heavily followed by [sirius-ai](https://github.com/sirius-ai/LPRNet_Pytorch)'s repo. One exception is that the spatial transformer layer is inserted to increase the accuracy reported on CCPD database as below: 
