@@ -12,8 +12,8 @@
 
 
 
-
 ## Results:
+** The detection result is accurate whereas the recognition result is not since the weights for the LPRNet was not being retrained again due to the lack of dataset from online resource. It is important to note that the original weights for LPRNet is from this [author](https://github.com/xuexingyu24/License_Plate_Detection_Pytorch). The [LPRNet weight](https://github.com/xuexingyu24/License_Plate_Detection_Pytorch/blob/master/LPRNet/weights/Final_LPRNet_model.pth) was specifically trained to recognize China License Plate character. Looking at the photos attached below, you can see that the character recognition is superior for China License Plate and vice-versa for Singapore License Plate.
 
 <img src="test/SGcar_1.jpg"  width="450" style="float: left;"> <img src="test_result/detected_SGcar_1.jpg"  width="450" style="float: left;">
 <img src="test/1.jpg"  width="450" style="float: left;"> <img src="test_result/detected_1.jpg"  width="450" style="float: left;">
@@ -26,6 +26,9 @@
 * run 'MTCNN/data_set/preprocess.py' to split training data and validation data and put in "ccpd_train" and "ccpd_val" folders respectively.
 * run 'MTCNN/data_preprocessing/gen_Pnet_train_data.py', 'MTCNN/data_preprocessing/gen_Onet_train_data.py','MTCNN/data_preprocessing/assemble_Pnet_imglist.py', 'MTCNN/data_preprocessing/assemble_Onet_imglist.py' for training data preparation.
 * run 'MTCNN/train/Train_Pnet.py' and 'MTCNN/train/Train_Onet.py
+
+
+
 
 
 ## Test
