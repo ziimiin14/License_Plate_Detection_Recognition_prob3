@@ -1,7 +1,14 @@
-# License_Plate_Detection_Pytorch
-This is a two stage lightweight and robust license plate recognition in MTCNN and LPRNet using Pytorch. [MTCNN](https://arxiv.org/abs/1604.02878v1) is a very well-known real-time detection model primarily designed for human face recognition. It is modified for license plate detection. [LPRNet](https://arxiv.org/abs/1806.10447), another real-time end-to-end DNN, is utilized for the subsquent recognition. This network is attributed by its superior performance with low computational cost without preliminary character segmentation. The [Spatial Transformer Layer](https://arxiv.org/abs/1506.02025) is embeded in this work to allow a better characteristics for recognition. The recognition accuracy is up to **99%** on CCPD base dataset with ~ **80 ms/image** on Nivida Quadro P4000. Here is the illustration of the proposed pipeline:
+# License_Plate_Detection_Recognition_Pytorch
+This repo is refers to the problem 3 in the technical assessment
+1) [YOLOv5](https://github.com/ultralytics/yolov5) is being used for license plate detection. 
+2) [LPRNet](https://arxiv.org/abs/1806.10447), is being used for license plate recognition (detect character on license plate)
+3) [Spatial Transformer Layer](https://arxiv.org/abs/1506.02025) is embeded in this work to allow a better characteristics for recognition.
 
-<img src="test/pipeline.png"  width="800">
+Task Completed:
+1) [Training data] (https://www.kaggle.com/andrewmvd/car-plate-detection) for license plate detection
+2) [YOLOv5 training guide] (https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) for license plate detection
+3) For optimized model purpose 
+
 
 ## MTCNN
 The modified MTCNN structure is presented as below. Only proposal net (Pnet) and output net (Onet) are used in this work since it is found that skipping Rnet will not hurt the accuracy in this case.  The Onet accepts 24(height) x 94(width) BGR image which is consistent with input for LPRNet. 
