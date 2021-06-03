@@ -55,7 +55,7 @@ P/S: The detection result is accurate whereas the recognition result is not sinc
 - scikit-learn==0.19.2  (for coreml quantization)
 
 ### extras
-- Cython  (for pycocotools https://github.com/cocodataset/cocoapi/issues/172)
+- Cython  [for pycocotools](https://github.com/cocodataset/cocoapi/issues/172)
 - pycocotools>=2.0  (COCO mAP)
 
 
@@ -70,4 +70,3 @@ P/S: The detection result is accurate whereas the recognition result is not sinc
 * [Spatial Transformer Layer](https://arxiv.org/abs/1506.02025)
 * [LPRNet_Pytorch](https://github.com/sirius-ai/LPRNet_Pytorch)
 
-**Please give me a star if it is helpful for your research**
