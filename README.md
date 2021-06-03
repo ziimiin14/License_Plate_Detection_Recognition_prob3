@@ -63,8 +63,7 @@ P/S: The detection result is accurate whereas the recognition result is not sinc
 
 
 # Test
-* Put the car photos in [test](https://github.com/ziimiin14/License_Plate_Detection_Recognition/tree/master/test) folder
-* run "python3 main.py --weights 
+* run "python3 main.py --weights ./yolov5/weights/yolov5s_car_plate_last.pt --source test --img-size 320 --conf-thres 0.25" in your terminal
 
 ## Reference
 * [YOLOv5](https://github.com/ultralytics/yolov5)
