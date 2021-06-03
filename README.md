@@ -22,6 +22,7 @@ P/S: The detection result is accurate whereas the recognition result is not sinc
 <img src="test/1.jpg"  width="450" style="float: left;"> <img src="test_result/detected_1.jpg"  width="450" style="float: left;">
 
 ## LPRNet dependencies
+- Python 3.6.9
 - pytorch >= 1.0.0
 - opencv-python 3.x
 - python 3.x
@@ -31,6 +32,7 @@ P/S: The detection result is accurate whereas the recognition result is not sinc
 
 ## YOLOv5 dependencies
 ### base
+- Python 3.6.9
 - matplotlib>=3.2.2
 - numpy>=1.18.5
 - opencv-python>=4.1.2
